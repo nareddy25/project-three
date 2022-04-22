@@ -1,7 +1,25 @@
+/*Custom Properties*/
+:root {
+  --gray: hsl(0, 0%, 26%);
+  --red: hsl(355, 78%, 60%);
+  --tan: hsl(44, 28%, 76%);
+  --white: hsl(0, 0%, 100%);
+  --heading-font: font-family: 'Poppins', sans-serif;;
+  --body-font: font-family: 'Montserrat', sans-serif;
+}
+
 /* Decent Defaults */
 
 img,
 video {
   width: 100%;
   height: auto;
+}
+
+/* Mobile Only Styles */
+@media (max-width: 47.9375em) {
+}
+
+/* Desktop Only Styles */
+@media (min-width: 48em) {
 }
