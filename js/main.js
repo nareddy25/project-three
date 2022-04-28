@@ -40,3 +40,4 @@ function next() {
 setup();
 previousButton.addEventListener("click", previous);
 nextButton.addEventListener("click", next);
+beginButton.addEventListener("click", next);
