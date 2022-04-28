@@ -4,8 +4,8 @@
   --red: hsl(355, 78%, 60%);
   --tan: hsl(44, 28%, 76%);
   --white: hsl(0, 0%, 100%);
-  --heading-font: font-family: 'Libre Baskerville', serif;
-  --body-font: font-family: 'Montserrat', sans-serif;
+  --heading-font: "Libre Baskerville", serif;
+  --body-font: "Montserrat", sans-serif;
 }
 
 /*Typography*/
@@ -18,9 +18,15 @@ body {
   color: var(--tan);
 }
 
-p {margin-bottom: 1rem;}
+p {
+  margin-bottom: 1rem;
+}
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 3rem 0 1.38rem;
   font-family: var(--heading-font);
   font-weight: 700;
@@ -32,16 +38,26 @@ h1 {
   font-size: 2.488rem;
 }
 
-h2 {font-size: 2.074rem;}
+h2 {
+  font-size: 2.074rem;
+}
 
-h3 {font-size: 1.728rem;}
+h3 {
+  font-size: 1.728rem;
+}
 
-h4 {font-size: 1.44rem;}
+h4 {
+  font-size: 1.44rem;
+}
 
-h5 {font-size: 1.2rem;}
+h5 {
+  font-size: 1.2rem;
+}
 
-small, .text_small {font-size: 0.833rem;}
-
+small,
+.text_small {
+  font-size: 0.833rem;
+}
 
 /* Decent Defaults */
 
@@ -58,23 +74,35 @@ body {
 h1 {
   color: var(--red);
   font-family: var(--heading-font);
-  text-align: left;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 0rem;
 }
 
 p {
   color: var(--tan);
   font-family: var(--body-font);
-  text-align: left;
+  text-align: center;
+  width: 30%;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  font-weight: 300;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: larger;
 }
 
 .slideshow {
   aspect-ratio: 16 / 9;
-  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  overflow: visible;
   position: relative;
 }
 
 .slideshow div {
- 
   position: absolute;
   width: 100%;
   height: 100%;
@@ -82,14 +110,108 @@ p {
   transition: opacity 300ms;
 }
 
-.slideshow img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .slideshow div.active {
   opacity: 1;
+}
+
+#introimg {
+  height: auto;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  display: block;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+#tart {
+  height: auto;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  display: block;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+  animation: infinite;
+  animation: animation 7s;
+}
+
+#steam {
+  height: auto;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  display: block;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: var(--tan);
+}
+
+#buttongroup {
+  display: flex;
+  justify-content: space-between 10px;
+  margin: 10px auto;
+  padding-top: 80px;
+  text-align: center;
+  padding: 6px 14px;
+  text-decoration: none;
+  border-style: none;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  width: 50%;
+  max-width: 20%;
+}
+
+#titletwo,
+#titlethree {
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+}
+
+#myUL {
+  list-style-type: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: larger;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  margin-left: 37%;
+  text-align: left;
+  list-style: inside;
+  list-style: none;
+}
+
+#myULtwo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: larger;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  margin-left: 33%;
+  text-align: left;
+  list-style: inside;
+  list-style-type: none;
 }
 
 /* Mobile Only Styles */
